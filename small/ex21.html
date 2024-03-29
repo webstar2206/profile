@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #clock {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+    
+    <script>
+        var clock = document.getElementById('clock');
+        var timerInterval;
+        var seconds = 0;
+
+        function digiClock() {
+            var dt = new Date();
+            var hh = dt.getHours();
+            var mm = dt.getMinutes();
+            var ss = dt.getSeconds();
+            var time = hh + ":" + mm + ":" + ss;
+            clock.innerHTML = time;
+        }
+
+        
+
+        digiClock();
+        setInterval(digiClock);
+    </script>
+</body>
+</html>

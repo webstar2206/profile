@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  td {
+    padding: 80px;
+    border: 1px solid black; /* Add border to table cells */
+  }
+</style>
+</head>
+<body>
+
+<table cellspacing="1" cellpadding="5" border="1">
+  <tr>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 1"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 2"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 3"></td>
+  </tr>
+  <tr>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 4"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 5"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 6"></td>
+  </tr>
+  <tr>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 7"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 8"></td>
+    <td><img src="images/5.jpeg" onclick="openImage('images/5.jpeg')" alt="Image 9"></td>
+  </tr>
+</table>
+
+<script>
+  function openImage(imageUrl) {
+    window.open(imageUrl, '_blank');
+  }
+</script>
+
+</body>
+</html>

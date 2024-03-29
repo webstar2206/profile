@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header {
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Clear float */
+}
+
+.column {
+    float: left;
+    width: 45%; /* Adjust width to leave space between columns */
+    margin: 10px;
+    border: 2px solid #333;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">Header</header>
+    <div class="container">
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel urna quis nisi commodo dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        <div class="column">
+            <p>Nulla facilisi. Suspendisse potenti. Integer auctor tortor nec sapien pulvinar, sed vehicula elit efficitur. Proin convallis ipsum non semper molestie.</p>
+        </div>
+    </div>
+</body>
+</html>

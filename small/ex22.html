@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #message{
+                height:200px;
+                width: 300px;
+                background-color: aquamarine;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="message"></div>
+        <script>
+            name=prompt("Enter your Name");
+            var dt=new Date();
+            hh=dt.getHours();
+            if(hh<12){
+                greeting="Good Morning";
+            }
+            else if(hh==12 || hh<17){
+                greeting="Good Afternoon";
+            }
+            else{
+                greeting="Good Evening";
+            }
+            message=greeting +""+name;
+            msg=document.getElementById('message');
+            msg.innerHTML=message;
+        </script>
+    </body>
+</html>

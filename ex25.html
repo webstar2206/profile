@@ -1,0 +1,56 @@
+        
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <form>
+            <input type="number" name="inputV" onchange="tempconv()"/>
+            <select name="inputOp" onchange="tempcov()">
+                <option value="C">Celcius</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            <br>
+            <input type="number" name="outputV" onchange="tempconv()"/>
+            <select name="outputOp" onchange="tempconv()">
+                <option value="C">Celcius</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+        </form>
+        <script>
+            function tempconv()
+            {
+                inputV=document.forms[0].elements['inputV'].value
+                document.forms[0].elements['outputV'].value=inputV
+                inputOp=document.forms[0].elements['inputOp'].value
+                outputOp=document.forms[0].elements['outputOp'].value
+                if(inputOp == 'C' && outputOp == 'F')
+                {
+                    result=(inputV*9/5)+32
+                }
+                else if(inputOp == 'F' && outputOp == 'C')
+                {
+                    result=(inputV - 32)*5/9
+                }
+                else if(inputOp == 'K' && outputOp == 'C')
+                {
+                    result=inputV - 273.15
+                }
+                else if(inputOp == 'C' && outputOp == 'K')
+                {
+                    result= inputV + 273.15
+                }
+                else
+                {
+                    result = inputV
+                }
+                document.forms[0].elements['outputV'].value = result;
+            }
+                
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #clock {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock"></div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+
+    <script>
+        var clock = document.getElementById('clock');
+        var timerInterval;
+        var seconds = 0;
+
+
+
+        function startTimer() {
+            timerInterval = setInterval(function() {
+                seconds++;
+                clock.innerHTML = seconds + 's';
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+       
+        setInterval(1000);
+    </script>
+</body>
+</html>
