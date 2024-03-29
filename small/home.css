@@ -873,3 +873,12 @@ nav a {
 nav a:hover {
     background-color: #111;
 }
+.overlay{
+  width: 500px;
+  height: 400px;
+  margin-left: 50%;
+  
+}
+.header-content h3{
+  margin-left: 50%;
+}
