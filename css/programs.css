@@ -1,0 +1,188 @@
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0)),url(../image/womenpilots.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 50px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  
+}
+.nav-links a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  background-color: #D0BCA1;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0d1a2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .game {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #b38e6b;
+            transition: transform 0.2s ease-in-out;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        .game:hover {
+            transform: scale(1.02);
+        }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background-color: #a6b28f;
+            position: absolute;
+            top: 100%; /* Position dropdown below the parent */
+            left: 0;
+            right: 0;
+            border: 1px solid #ddd;
+            z-index: 1;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px; 
+    height: 80px; /* Adjust the height */
+    border-radius: 50%;
+    display: flex;
+     /* Ensure the image stays within the circular container */
+}
+
+.logo img {
+    width: 150%; /* Make the image fill the circular container */
+    height: 150%;
+    object-fit: cover; /* Maintain the aspect ratio while covering the container */
+}
+.book
+ {
+    width: 100%;
+            max-width: 800px;
+            height: 300px;
+            margin: 2px auto;
+
+          
+            border-radius: 10px;
+            display: flex;      
+           
+
+}
+.ab{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.footer {
+  height:100%;
+  background-color:#271414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: #D0BCA1;
+  text-decoration: none;
+}
+.footer p{
+  padding-top: 35px;
+  text-align: center;
+  color: #D0BCA1;
+}
+.social{
+  padding-bottom: 10px;
+  align-items: center;
+  align-self: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
