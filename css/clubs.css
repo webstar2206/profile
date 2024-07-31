@@ -1,0 +1,152 @@
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #3838387c;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #b9b9b9a4 ;
+  border: 1px solid #b9b9b9a4;
+  border-radius: 1px ;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+html, body{
+  font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.club-name,.services,.gallery{
+	padding:4em 0;
+}
+.club-item {
+    padding-left: 0;
+}
+.col-md-6{
+  padding: 3em;
+}
+.clubs-text{
+	background: rgba(0, 0, 0, 0.78);
+  padding: 2em;
+}
+.clubs h3{
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.clubs p{
+    color: #a0a0a0;
+    font-size: .9em;
+    line-height: 1.8em;
+    margin: 1em 0 0 0;
+}
+.clubs-image{
+	background: url(../image/bajaj.jpeg) no-repeat 0px 0px;
+  background-size: cover;
+}
+
+
+
+.services-heading h1{
+	text-align:center;
+}
+
+.service-block,.gallery-block{
+	margin:4em 0 0 0;
+}
+.service-block h4{
+	color: #000000;
+  font-size: 1.5em;
+  margin: .5em 0;
+  font-weight: 600;
+}
+.service-block p{
+	color:#414141;
+	font-size:.9em;
+	margin:0;
+	line-height:1.8em;
+}
+
+
+.block {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+
+.block figure {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    border: solid 7px #dbdbdb;
+}
+
+.block figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.8;
+}
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .col-md-3, .col-md-4, .col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (min-width: 992px) {
+    .col-md-3, .col-md-4,.col-md-6 {
+      float: left;
+    }
+    
+    .col-md-6 {
+      width: 50%;
+    }
+   
+    .col-md-4 {
+      width: 33.33333333%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    
+  }

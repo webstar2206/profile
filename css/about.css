@@ -1,0 +1,168 @@
+body::-webkit-scrollbar {
+     width: 5px;
+     height: 5px;
+ }
+ body::-webkit-scrollbar-track {
+     background: #3838387c;
+ }
+ body::-webkit-scrollbar-thumb {
+     background-color: #b9b9b9a4 ;
+     border: 1px solid #b9b9b9a4;
+     border-radius: 1px ;
+ }
+
+ .header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.5)),url(../image/home-background.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-left: 0%;
+}
+.header h3{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10%;
+  justify-content: center;
+ }
+ body {
+  font-weight: normal;
+  color:#271414;
+  font-size: 14px;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+ }
+
+ h1,h2,h3,h4,h5,h6,p,ul {
+   margin:0;
+   padding: 0;
+  }
+ h1,h2,h3,h4,h5,h6 {
+  color:#271414;
+   font-weight: 700;
+  }
+ h1 {
+  font-size: 48px;}
+ h2 {
+  font-size: 36px;}
+ h3 {
+  font-size: 28px;}
+ h4 {
+  font-size: 24px;}
+ h5 {
+  font-size: 22px;}
+ h6 {
+  font-size: 18px;}
+ p {
+  line-height: 26px;}
+ ul {
+  list-style-type: none;}
+ a {
+  text-decoration: none; 
+  display: inline-block;}
+ a:hover,a:focus,a:visited {
+  text-decoration: none; 
+  outline: none;}
+ 
+.round-border {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+.theme-title {
+  text-align: center;
+  margin:0 0 0 0;
+  padding-top: 50px;
+}
+.theme-title h2 {
+  position: relative;
+}
+.theme-title h2:before {
+  content: '';
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -12px;
+}
+.theme-title p {
+  font-size: 16px;
+  width: 75%;
+  margin: 60px auto 0 auto;
+}
+#about-us{
+  background-color: #D0BCA1;
+}
+#about-us .single-about-content:hover h5 a
+{
+  color:#271414;
+}
+#about-us .single-about-content:hover .icon{
+  background: #271414;
+}
+#about-us .icon,#about-us .single-about-content a.more
+{
+  border-color:#271414;
+  border-style: solid;
+}
+
+#about-us .single-about-content {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 1px;
+}
+#about-us .icon {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  line-height: 130px;
+  border-width: 2px;
+  font-size: 36px;
+  color:#271414;
+}
+#about-us h5 a {
+  color:#271414;
+  margin: 35px 0 20px 0;
+}
+#about-us .single-about-content a.more {
+  width: 130px;
+  line-height: 45px;
+  color:#271414;
+  border-width: 1px;
+  margin-top:22px;
+}
+#about-us .single-about-content a.more:hover,
+#about-us .single-about-content:hover .icon {
+  color:#ffff;
+}
+
+.footer {
+  height:100%;
+  background-color:#271414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer p{
+  padding-top: 35px;
+  text-align: center;
+}
+.social{
+  padding-bottom: 10px;
+  align-items: center;
+  align-self: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
